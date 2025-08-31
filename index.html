@@ -1,29 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Keaton Arkeilpane – Creative Audio Freelancer & Sound Editor</title>
+
+  <!-- Meta & Social -->
+  <meta name="description" content="Keaton Arkeilpane – Creative audio freelancer & sound editor helping brands and creators tell clearer, louder stories." />
+  <meta property="og:title" content="Keaton Arkeilpane – Creative Audio Freelancer & Sound Editor" />
+  <meta property="og:description" content="Clean edits, sound design, and mix polish for podcasts, music, and video." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://karkeilpane.github.io/my-website/" />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Skip link for a11y -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-    <nav>
-      <a href="https://karkeilpane.github.io/my-website/">KA–25</a>
-      <a href="mailto:keaton.arkeilpane05@gmail.com">CONTACT</a>
-    </nav>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="Home">
+        <span class="brand-mark">KA</span>
+        <span class="brand-text">Keaton Arkeilpane</span>
+      </a>
+
+      <nav aria-label="Primary" class="primary-nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a class="btn btn--ghost" href="mailto:keaton.arkeilpane05@gmail.com">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Creative Audio Freelancer & Sound Editor</h1>
-    <p>
-      I’m Keaton Arkeilpane, a creative audio freelancer passionate about sound and storytelling. 
-      I’ve created mashups, mixes, and personal sound design projects, while gaining hands-on live 
-      audio experience as a volunteer engineer at a local performing arts center. I collaborate with 
-      clients to edit, enhance, and polish audio for podcasts, music, audiobooks, and video projects — 
-      bringing clarity, energy, and creativity to every project.
-    </p>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">Creative Audio & Sound Design</p>
+        <h1 class="hero__title">
+          I edit, design, and polish audio so your story lands.
+        </h1>
+        <p class="hero__lede">
+          I’m Keaton Arkeilpane — a creative audio freelancer and sound editor. I work with podcasts, music, and video to bring clarity, energy, and emotion to every project.
+        </p>
+        <div class="hero__cta">
+          <a class="btn" href="#projects">Selected Projects</a>
+          <a class="btn btn--ghost" href="mailto:keaton.arkeilpane05@gmail.com">Get in touch</a>
+        </div>
+
+        <ul class="social">
+          <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://soundcloud.com/" target="_blank" rel="noopener">SoundCloud</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Selected Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title">Selected Projects</h2>
+
+        <div class="grid">
+          <!-- Card -->
+          <article class="card">
+            <a class="card__link" href="#" aria-label="Open project 1">
+              <div class="card__thumb" aria-hidden="true">
+                <!-- Drop an image into /assets and update src -->
+                <img src="assets/project-1.jpg" alt="" loading="lazy">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Podcast Edit & Mix</h3>
+                <p class="card__meta">Dialog cleanup, noise reduction, mastering</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a class="card__link" href="#">
+              <div class="card__thumb" aria-hidden="true">
+                <img src="assets/project-2.jpg" alt="" loading="lazy">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Music Mashup Series</h3>
+                <p class="card__meta">Arrangement, leveling, limiter staging</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a class="card__link" href="#">
+              <div class="card__thumb" aria-hidden="true">
+                <img src="assets/project-3.jpg" alt="" loading="lazy">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Short Film Sound Design</h3>
+                <p class="card__meta">SFX, foley, ambience, final mix</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a class="card__link" href="#">
+              <div class="card__thumb" aria-hidden="true">
+                <img src="assets/project-4.jpg" alt="" loading="lazy">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Live Audio Volunteer</h3>
+                <p class="card__meta">House mix assistance, stage patching</p>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="more">
+          <a class="btn btn--ghost" href="mailto:keaton.arkeilpane05@gmail.com">Request full portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section--alt">
+      <div class="container about">
+        <div class="about__text">
+          <h2 class="section__title">About</h2>
+          <p>
+            I’m a Denver-based audio freelancer focused on clean edits and thoughtful sound design.
+            My toolkit spans FL Studio, dialog cleanup, tasteful limiting, and mix translation. I love
+            collaborating early to shape the sonic identity of a project — from podcasts to short films.
+          </p>
+          <ul class="chips" aria-label="Services">
+            <li class="chip">Editing</li>
+            <li class="chip">Sound Design</li>
+            <li class="chip">Mix & Master</li>
+            <li class="chip">Podcast Polish</li>
+            <li class="chip">Music Mashups</li>
+          </ul>
+        </div>
+        <div class="about__box">
+          <h3 class="about__box-title">Capabilities</h3>
+          <ul class="list">
+            <li>Dialog cleanup & noise reduction</li>
+            <li>Leveling, limiting, and loudness targets</li>
+            <li>Creative SFX and ambience beds</li>
+            <li>Deliverables for podcast, film, and web</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact">
+      <div class="container contact__inner">
+        <h2 class="contact__title">Looking for a sound editor?</h2>
+        <p class="contact__lede">Tell me about your project and timeline — I’ll reply quickly.</p>
+        <a class="btn" href="mailto:keaton.arkeilpane05@gmail.com">Get in touch</a>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Keaton Arkeilpane</p>
+      <a href="mailto:keaton.arkeilpane05@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    // small nicety
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
